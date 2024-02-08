@@ -18,12 +18,25 @@
       </button>
     </div>
     <script>
+        const date = new Date().getHours();
+
         $(document).ready(function() { 
           $('h1').effect('bounce', { times: 3 }, 500);
         });
     
         $('button').click(function(){
-          alert("Tenha um bom dia!");
+          if (date >= 18) {
+            alert("Tenha uma boa noite!")
+          }
+          else if (date >= 12) {
+            alert("Tenha um boa tarde!");
+          }
+          else if (date >= 6) {
+            alert("Tenha um bom dia!");
+          }
+          else {
+            alert("Tenha uma boa madrugada!")
+          }
         });
       </script>
 </body>
