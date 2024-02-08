@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <title>Atividade semana 1</title>
+</head>
+<body>
+    <div id="title">
+        <h1>Bem vindo a página da Isabella</h1>
+    </div>
+    <button type="submit" id="'button">
+        Clique aqui!
+    </button>
+    <script>
+        $(document).ready(function() { 
+          $('h1').effect('bounce', { times: 3 }, 500);
+        });
+    
+        $('button').click(function(){
+          alert("Tenha um bom dia!");
+        });
+      </script>
+</body>
+</html>
